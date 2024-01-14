@@ -1,0 +1,111 @@
+.container{
+    min-width: 550px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+    padding-top: 5px;
+    height: fit-content;
+    margin: 0 auto;
+}
+ .header{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+ }
+ .header::-webkit-scrollbar{
+    height: 5px;
+    border-radius: 20px;
+ }
+ .header::-webkit-scrollbar-thumb{
+    background-color: #b7b2ba;
+ }
+ .header .section{
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.header .active{
+    border-bottom: 2px solid rgb(188, 140, 246);
+    color: blueviolet;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.detail .row{
+    display: flex;
+}
+.detail .column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.detail .row > div{
+    flex: 1;
+}
+label{
+    padding: 10px 15px;
+
+}
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.chip{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: rgb(139, 65, 163);
+    border-radius: 15px;
+    cursor: default;
+}
+.chip p {
+    line-height: 1.2rem;
+    color: white;
+}
+.chip svg{
+    color: white;
+    height: 20px;
+    width: 20px;
+}
+.chip .active{
+    background-color: rgb(219, 162, 239);
+}
+.body button{
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: rgb(142, 6, 179);
+    margin: 15px;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    transition: 200ms;
+}
+.body button:active{
+    transform:translateY(2px);
+}
+.chips .new {
+    color: rgb(191, 132, 246);
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
